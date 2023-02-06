@@ -7,32 +7,46 @@ Are you tired of working on a side project for your portfolio all by yourself? D
 ### MVP Features
 
 1. <strong>Authentication & Authorization</strong>
+
    User must be signed-in to be able to post or join projects. Otherwise, user will be redirected to the login/register page.
 
 2. <strong>Sign-in & Sign-out</strong>
+
    User can sign-in to an account by typing in email address and password. If user want to change account, head to the profile page and click sign-out. User will then be redirected to the main page.
 
 3. <strong>Register</strong>
+
    To register a new account, user must fill in email address, username, password, and password confirmation.
 
 4. <strong>Edit Profile</strong>
+
    User can edit the following profile :
-   a. Profile Picture
-   b. Role
-   c. Username
+   
+      a. Profile Picture
+      
+      b. Role
+      
+      c. Username
 
 5. <strong>Post Project Offer</strong>
+
    To post a project offer, user must specify the following :
-   a. Project Title
-   b. Project Description
-   c. Required roles (e.g. Frontend, Backend, UI/UX, etc)
+   
+      a. Project Title
+      
+      b. Project Description
+      
+      c. Required roles (e.g. Frontend, Backend, UI/UX, etc)
 
 6. <strong>Join Project Offer</strong>
+
    Signed-in user can join a project by clicking the join button. User also can write and send a message upon joining in a modal box that appears afterwards.
 
 7. <strong>Dark Mode</strong>
 
 ### Tech stack
 
-a. Frontend : Next.js, TailwindCSS, Redux
-b. Backend : _Coming Soon_
+Frontend : Next.js (Typescript), TailwindCSS, Redux</li>
+
+Backend : _Coming Soon_</li>
+
