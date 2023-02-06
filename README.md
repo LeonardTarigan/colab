@@ -4,6 +4,8 @@
 
 Are you tired of working on a side project for your portfolio all by yourself? Do you need people to collaborate with? Well, COLAB got you covered. With COLAB, you can look for partners to work on a project. Just make sure you are signed in, post a project offer, specify the roles needed, and you are ready to go. Want to join other people's project that fit your role? Join the project and wait for the author for approval.
 
+<br/>
+
 ### MVP Features
 
 1. <strong>Authentication & Authorization</strong>
@@ -43,6 +45,8 @@ Are you tired of working on a side project for your portfolio all by yourself? D
    Signed-in user can join a project by clicking the join button. User also can write and send a message upon joining in a modal box that appears afterwards.
 
 7. <strong>Dark Mode</strong>
+
+<br/>
 
 ### Tech stack
 
