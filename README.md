@@ -29,6 +29,8 @@ Are you tired of working on a side project for your portfolio all by yourself? D
       b. Role
       
       c. Username
+      
+      d. Contacts
 
 5. <strong>Post Project Offer</strong>
 
