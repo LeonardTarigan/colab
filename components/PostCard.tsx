@@ -12,10 +12,10 @@ function PostCard() {
                 </p>
             </div>
 
-            <div className='flex items-center justify-between'>
+            <div className='flex items-end justify-between'>
                 <div>
                     <p className='mb-3 font-medium text-gray-600 dark:text-gray-400'>
-                        2h ago | @username
+                        @username · 2h ago
                     </p>
 
                     <div className='flex gap-2 font-semibold'>
