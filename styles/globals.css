@@ -10,6 +10,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    width: 0;
+}
+
 .comfortaa {
     font-family: 'Comfortaa', cursive;
 }

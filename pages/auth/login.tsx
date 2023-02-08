@@ -7,7 +7,7 @@ function Login() {
     };
 
     return (
-        <MainLayout>
+        <MainLayout pageTitle='Login'>
             <main className='mt-20 flex w-full items-center justify-center'>
                 <form
                     onSubmit={handleLogin}
