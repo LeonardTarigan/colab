@@ -2,9 +2,9 @@ import React from 'react';
 
 function PostCard() {
     return (
-        <div className='flex aspect-[5/3] h-56 cursor-pointer flex-col justify-between rounded-xl border border-transparent bg-gray-200 p-5 text-xs transition-all duration-150 hover:border-fuchsia-500 dark:bg-gray-800'>
+        <div className='flex aspect-[5/3] h-44 cursor-pointer flex-col justify-between rounded-xl border border-transparent bg-gray-200 p-3 text-xs transition-all duration-150 hover:border-fuchsia-500 dark:bg-gray-800 md:h-56 md:p-5'>
             <div>
-                <h4 className='mb-2 text-lg font-semibold'>Title</h4>
+                <h4 className='mb-1 text-lg font-semibold md:mb-2'>Title</h4>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Iure dicta illum pariatur suscipit ipsum sint quisquam

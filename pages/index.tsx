@@ -5,7 +5,7 @@ import MainLayout from '../layout/MainLayout';
 const Home: NextPage = () => {
     return (
         <MainLayout pageTitle='COLAB'>
-            <main className='mx-auto flex max-w-screen-xl flex-col items-center justify-center gap-10 py-10 px-32'>
+            <main className='mx-auto flex max-w-screen-xl flex-col items-center justify-center gap-10 py-10 px-5 md:px-16 lg:px-32'>
                 <LatestPost />
                 <LatestPost />
                 <LatestPost />

@@ -37,7 +37,7 @@ function DarkModeButton() {
 
 export default DarkModeButton;
 
-function SunIcon(props: { className: string }) {
+const SunIcon = (props: { className: string }) => {
     return (
         <svg
             fill='none'
@@ -55,7 +55,7 @@ function SunIcon(props: { className: string }) {
             ></path>
         </svg>
     );
-}
+};
 
 const MoonIcon = (props: { className: string }) => {
     return (
