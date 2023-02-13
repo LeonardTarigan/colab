@@ -1,11 +1,24 @@
-const dbClient = require('../config/database');
+const { DataTypes } = require('sequelize');
+const db = require('../config/database');
 
-const createNewUser = (body) => {
-    const SQLQuery = `INSERT INTO users (username, email, password) VALUES ('${body.username}', '${body.email}', '${body.password}')`;
+const User = db.define('User', {
+    name: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    email: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    password: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    refresh_token: {
+        type: DataTypes.TEXT
+    }
+}, {
+    freezeTableName: true
+});
 
-    return dbClient.query(SQLQuery);
-}
-
-module.exports = {
-    createNewUser
-}
+module.exports = User;

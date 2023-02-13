@@ -1,19 +1,8 @@
-const { Client } = require('pg');
-require('dotenv').config();
+const { Sequelize } = require('sequelize');
 
-const dbClient = new Client({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME
-})
+const db = new Sequelize(`${process.env.DB_NAME}`, `${process.env.DB_USERNAME}`, `${process.env.DB_PASSWORD}`, {
+    host: 'localhost',
+    dialect: 'postgres'
+});
 
-dbClient.connect((error) => {
-    if (error) {
-        console.log(error)
-    } else {
-        console.log('Database connected....')
-    }
-})
-
-module.exports = dbClient;
+module.exports = db;
