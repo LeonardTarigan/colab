@@ -3,6 +3,7 @@
 # dependencies
 /backend/node_modules
 /backend/.env
+/frontend/node_modules
 /.pnp
 .pnp.js
 .vscode/
@@ -11,7 +12,7 @@
 /coverage
 
 # next.js
-/.next/
+frontend/.next/
 /out/
 
 # production
