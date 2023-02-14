@@ -23,24 +23,24 @@ Are you tired of working on a side project for your portfolio all by yourself? D
 4. <strong>Edit Profile</strong>
 
    User can edit the following profile :
-   
-      a. Profile Picture
-      
-      b. Role
-      
-      c. Username
-      
-      d. Contacts
+
+   a. Profile Picture
+
+   b. Role
+
+   c. Username
+
+   d. Contacts
 
 5. <strong>Post Project Offer</strong>
 
    To post a project offer, user must specify the following :
-   
-      a. Project Title
-      
-      b. Project Description
-      
-      c. Required roles (e.g. Frontend, Backend, UI/UX, etc)
+
+   a. Project Title
+
+   b. Project Description
+
+   c. Required roles (e.g. Frontend, Backend, UI/UX, etc)
 
 6. <strong>Join Project Offer</strong>
 
@@ -54,5 +54,4 @@ Are you tired of working on a side project for your portfolio all by yourself? D
 
 Frontend : Next.js (Typescript), TailwindCSS, Redux</li>
 
-Backend : _Coming Soon_</li>
-
+Backend : NodeJS, ExpressJS, PostgreSQL</li>
