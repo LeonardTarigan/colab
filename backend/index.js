@@ -9,7 +9,7 @@ const usersRoutes = require('./routes/users');
 app.use(express.json());
 
 //Routes
-app.use('/users', usersRoutes);
+app.use('/', usersRoutes);
 
 //Database
 const dbConnect = async () => {
