@@ -5,6 +5,7 @@ import ProfileButton from './ProfileButton';
 
 function Navbar() {
     const [scrollTop, setScrollTop] = useState(0);
+    const [logged, setLogged] = useState(true);
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
@@ -27,19 +28,21 @@ function Navbar() {
                 <div className='flex items-center gap-5'>
                     <DarkModeButton />
 
-                    {/* <Link href={'/auth/login'}>
-                        <button className='rounded-lg border border-fuchsia-700 bg-fuchsia-600 py-2 px-5 font-semibold text-gray-200 transition-all duration-200 hover:bg-transparent hover:text-fuchsia-600'>
-                            Login
-                        </button>
-                    </Link> */}
-
-                    <ProfileButton />
+                    {logged ? (
+                        <ProfileButton />
+                    ) : (
+                        <Link href={'/auth/login'}>
+                            <button className='rounded-lg border border-fuchsia-700 bg-fuchsia-600 py-2 px-5 font-semibold text-gray-200 transition-all duration-200 hover:bg-transparent hover:text-fuchsia-600'>
+                                Login
+                            </button>
+                        </Link>
+                    )}
                 </div>
             </nav>
 
             <div
                 style={{ width: `${scrollTop}%` }}
-                className='absolute h-[2px] bg-fuchsia-600'
+                className='absolute h-[2px] max-w-full bg-fuchsia-600'
             ></div>
         </div>
     );
