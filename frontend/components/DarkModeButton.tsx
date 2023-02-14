@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
+import { CustomableComponent } from '../interfaces';
 
 function DarkModeButton() {
     const [mounted, setMounted] = useState(false);
@@ -37,7 +38,7 @@ function DarkModeButton() {
 
 export default DarkModeButton;
 
-const SunIcon = (props: { className: string }) => {
+const SunIcon = (props: CustomableComponent) => {
     return (
         <svg
             fill='none'
@@ -57,7 +58,7 @@ const SunIcon = (props: { className: string }) => {
     );
 };
 
-const MoonIcon = (props: { className: string }) => {
+const MoonIcon = (props: CustomableComponent) => {
     return (
         <svg
             fill='none'
