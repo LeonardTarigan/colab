@@ -1,8 +1,9 @@
+import Image from 'next/image';
 import React from 'react';
 
 function PostCard() {
     return (
-        <div className='flex aspect-[5/3] h-44 cursor-pointer flex-col justify-between rounded-xl border border-transparent bg-gray-200 p-3 text-xs transition-all duration-150 hover:border-fuchsia-500 dark:bg-gray-800 md:h-56 md:p-5'>
+        <div className='flex aspect-[5/3] h-44 cursor-pointer flex-col justify-between rounded-xl border border-transparent bg-gray-100 p-3 text-xs transition-all duration-150 hover:border-fuchsia-500 dark:bg-gray-800 md:h-56 md:p-5'>
             <div>
                 <h4 className='mb-1 text-lg font-semibold md:mb-2'>Title</h4>
                 <p>
@@ -31,7 +32,17 @@ function PostCard() {
                     </div>
                 </div>
 
-                <div className='aspect-square w-10 rounded-full bg-fuchsia-600 dark:bg-gray-700'></div>
+                <div className='relative h-10 w-10 overflow-hidden rounded-full'>
+                    <Image
+                        src={`/api/imageProxy?url=${encodeURIComponent(
+                            'https://t-2.tstatic.net/kaltim/foto/bank/images/Nama-karakter-anime-Hunter-x-Hunter-Killua-Zoldyck.jpg'
+                        )}
+                            `}
+                        alt='Profile Picture'
+                        fill={true}
+                        sizes='w-10'
+                    />
+                </div>
             </div>
         </div>
     );

@@ -20,7 +20,7 @@ function Navbar() {
 
     return (
         <div className='sticky top-0'>
-            <nav className='flex w-full items-center justify-between border-b border-slate-600 bg-gray-100 py-5 px-5 dark:bg-gray-900 md:px-16 lg:px-32'>
+            <nav className='flex w-full items-center justify-between border-b border-slate-400 bg-gray-100 py-5 px-5 dark:border-slate-600 dark:bg-gray-900 md:px-16 lg:px-32'>
                 <Link href={'/'} className='comfortaa text-2xl'>
                     .co<span className='text-fuchsia-600'>lab</span>
                 </Link>
