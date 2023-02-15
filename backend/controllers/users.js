@@ -27,7 +27,9 @@ const createNewUser = async (req, res) => {
 
 const getAllUsers = async (req, res) => {
     try {
-        const users = await usersModel.findAll();
+        const users = await usersModel.findAll({
+            attributes: ['id', 'name', 'email']
+        });
         res.status(200).json({
             message: 'Get all users is success',
             data: users

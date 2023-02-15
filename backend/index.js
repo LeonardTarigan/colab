@@ -2,11 +2,13 @@ const express = require('express')
 const app = express();
 require('dotenv').config();
 const db = require('./config/database');
+const cookieParser = require('cookie-parser');
 
 const usersRoutes = require('./routes/users');
 
 //Middleware
 app.use(express.json());
+app.use(cookieParser());
 
 //Routes
 app.use('/', usersRoutes);
