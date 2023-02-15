@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-slate-200;
+    @apply bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-slate-200;
 
     font-family: 'Poppins', sans-serif;
 }
