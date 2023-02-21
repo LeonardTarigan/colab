@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import { processImage } from '../services';
 
 function PostCard() {
     return (
@@ -41,10 +42,9 @@ function PostCard() {
 
                 <div className='relative h-10 w-10 overflow-hidden rounded-full'>
                     <Image
-                        src={`/api/imageProxy?url=${encodeURIComponent(
+                        src={processImage(
                             'https://i.pinimg.com/736x/7a/f4/78/7af47832ce1e058dad1c6aa56efb1211.jpg'
                         )}
-                            `}
                         alt='Profile Picture'
                         fill={true}
                         sizes='w-10'

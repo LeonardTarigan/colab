@@ -3,6 +3,7 @@ import { Menu, Transition } from '@headlessui/react';
 import Link from 'next/link';
 import { CustomableComponent } from '../interfaces';
 import Image from 'next/image';
+import { processImage } from '../services';
 
 function ProfileButton() {
     return (
@@ -15,10 +16,9 @@ function ProfileButton() {
                         }
                     >
                         <Image
-                            src={`/api/imageProxy?url=${encodeURIComponent(
+                            src={processImage(
                                 'https://pbs.twimg.com/profile_images/1851433900/yextK_1__400x400.png'
                             )}
-                            `}
                             alt='Profile Picture'
                             fill={true}
                             sizes='w-10'
