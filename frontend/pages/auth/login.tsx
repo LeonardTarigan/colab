@@ -7,7 +7,7 @@ function Login() {
     };
 
     return (
-        <MainLayout pageTitle='Login'>
+        <MainLayout pageTitle='Login' navbar={true} footer={false}>
             <main className='mt-20 flex w-full items-center justify-center'>
                 <form
                     onSubmit={handleLogin}
