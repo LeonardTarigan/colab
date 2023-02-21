@@ -19,8 +19,8 @@ function Navbar() {
     }, []);
 
     return (
-        <div className='sticky top-0'>
-            <nav className='flex w-full items-center justify-between border-b border-slate-400 bg-gray-100 py-5 px-5 dark:border-slate-600 dark:bg-gray-900 md:px-16 lg:px-32'>
+        <div className='sticky top-0 z-10'>
+            <nav className='flex w-full items-center justify-between border-b border-gray-400 bg-gray-100 py-3 px-5 dark:border-gray-600 dark:bg-gray-900 md:px-16 lg:px-32'>
                 <Link href={'/'} className='comfortaa text-2xl'>
                     .co<span className='text-fuchsia-600'>lab</span>
                 </Link>
@@ -42,7 +42,7 @@ function Navbar() {
 
             <div
                 style={{ width: `${scrollTop}%` }}
-                className='absolute h-[2px] max-w-full bg-fuchsia-600'
+                className='absolute z-10 h-[2px] max-w-full bg-fuchsia-500 dark:bg-fuchsia-700'
             ></div>
         </div>
     );
