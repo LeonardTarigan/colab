@@ -6,22 +6,23 @@ import Image from 'next/image';
 
 function ProfileButton() {
     return (
-        <Menu as={'div'} className={'relative flex'}>
+        <Menu as={'div'} className={'relative z-20 flex'}>
             {({ open }) => (
                 <>
                     <Menu.Button
                         className={
-                            'relative h-10 w-10 overflow-hidden rounded-full'
+                            'relative h-10 w-10 overflow-hidden rounded-full outline outline-0 outline-offset-4 outline-gray-600 hover:outline-1'
                         }
                     >
                         <Image
                             src={`/api/imageProxy?url=${encodeURIComponent(
-                                'https://t-2.tstatic.net/kaltim/foto/bank/images/Nama-karakter-anime-Hunter-x-Hunter-Killua-Zoldyck.jpg'
+                                'https://pbs.twimg.com/profile_images/1851433900/yextK_1__400x400.png'
                             )}
                             `}
                             alt='Profile Picture'
                             fill={true}
                             sizes='w-10'
+                            className='object-cover'
                         />
                     </Menu.Button>
 
@@ -36,7 +37,7 @@ function ProfileButton() {
                     >
                         <Menu.Items
                             className={
-                                'absolute right-0 mt-14 flex w-32 flex-col overflow-hidden rounded-xl bg-gray-200 shadow-xl dark:bg-gray-700'
+                                'absolute right-0 mt-14 flex w-32 flex-col overflow-hidden rounded-xl bg-gray-100 shadow-xl dark:bg-gray-700'
                             }
                         >
                             <Menu.Item>
@@ -44,9 +45,9 @@ function ProfileButton() {
                                     <Link
                                         className={`${
                                             active &&
-                                            'bg-fuchsia-600 text-white'
+                                            'text-whigray-100te bg-fuchsia-600'
                                         } flex items-center gap-2 p-3 text-sm`}
-                                        href='/'
+                                        href='/profile'
                                     >
                                         <UserIcon className='h-5 w-5' />
                                         <span>Profile</span>
@@ -58,7 +59,7 @@ function ProfileButton() {
                                     <Link
                                         className={`${
                                             active &&
-                                            'bg-fuchsia-600 text-white'
+                                            'bg-fuchsia-600 text-gray-100'
                                         } flex items-center gap-2 p-3 text-sm`}
                                         href='/'
                                     >

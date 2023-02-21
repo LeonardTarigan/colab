@@ -2,9 +2,17 @@ import type { NextPage } from 'next';
 import LatestPost from '../components/LatestPost';
 import MainLayout from '../layout/MainLayout';
 
-const Home: NextPage = () => {
+export function getServerSideProps() {
+    return {
+        props: {
+            data: {},
+        },
+    };
+}
+
+const Home: NextPage = ({ data }: any) => {
     return (
-        <MainLayout pageTitle='COLAB'>
+        <MainLayout pageTitle='COLAB' navbar={true} footer={true}>
             <main className='mx-auto flex max-w-screen-xl flex-col items-center justify-center gap-10 py-10 px-5 md:px-16 lg:px-32'>
                 <LatestPost />
                 <LatestPost />
