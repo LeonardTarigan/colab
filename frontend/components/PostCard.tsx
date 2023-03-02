@@ -40,7 +40,7 @@ function PostCard() {
                     </div>
                 </div>
 
-                <div className='relative h-10 w-10 overflow-hidden rounded-full'>
+                <div className='relative h-10 w-10 overflow-hidden rounded-full bg-gray-700'>
                     <Image
                         src={processImage(
                             'https://i.pinimg.com/736x/7a/f4/78/7af47832ce1e058dad1c6aa56efb1211.jpg'

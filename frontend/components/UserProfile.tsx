@@ -6,8 +6,9 @@ import { UilLocationPoint } from '@iconscout/react-unicons';
 function UserProfile() {
     return (
         <section className='grow overflow-hidden rounded-xl border border-gray-600 text-sm'>
-            <div className='relative h-44 w-full'>
+            <div className='relative h-44 w-full bg-gray-700'>
                 <Image
+                    // https://images3.alphacoders.com/820/thumb-1920-82045.jpg
                     src={processImage(
                         'https://images3.alphacoders.com/820/thumb-1920-82045.jpg'
                     )}
@@ -18,7 +19,7 @@ function UserProfile() {
             </div>
 
             <div className='flex gap-5 py-2 px-10'>
-                <div className='relative -mt-9 h-24 w-24 overflow-hidden rounded-full border-4 border-gray-900'>
+                <div className='relative -mt-9 h-24 w-24 overflow-hidden rounded-full border-4 border-gray-900 bg-gray-700'>
                     <Image
                         src={processImage(
                             'https://pbs.twimg.com/profile_images/1851433900/yextK_1__400x400.png'
